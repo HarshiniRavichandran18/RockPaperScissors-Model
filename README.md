@@ -1,4 +1,4 @@
-# ✊ AI Stone • Paper • Scissors
+# AI Stone • Paper • Scissors
 
 AI Stone • Paper • Scissors is a Flask-based web application that uses a TensorFlow Keras model trained with Google Teachable Machine to recognize hand gestures in real time. The player shows a Rock, Paper, or Scissors gesture to the webcam and competes against the computer.
 
