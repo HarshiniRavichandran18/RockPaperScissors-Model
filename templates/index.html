@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stone Paper Scissors</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✊ AI Stone • Paper • Scissors ✋</h1>
+
+    <div class="game">
+
+        <div class="camera">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <p id="countdown"></p>
+        </div>
+
+        <div class="panel">
+
+            <div class="card">
+                <h3>You</h3>
+                <div class="value" id="player">-</div>
+            </div>
+
+            <div class="card">
+                <h3>Computer</h3>
+                <div class="value" id="computer">-</div>
+            </div>
+
+            <div class="card">
+                <h3>Result</h3>
+                <div class="result" id="result">Ready?</div>
+            </div>
+
+            <div class="card score">
+                <div>
+                    <h3>You</h3>
+                    <div class="value" id="youScore">0</div>
+                </div>
+
+                <div>
+                    <h3>AI</h3>
+                    <div class="value" id="aiScore">0</div>
+                </div>
+            </div>
+
+            <button onclick="playGame()">🎮 PLAY</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
